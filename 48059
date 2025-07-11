@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KHADIS ENTERPRISE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('topBtn').style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="KHADIS ENTERPRISE Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero fade-in">
+    <div class="container">
+      <h1>Welcome to KHADIS ENTERPRISE</h1>
+      <p>Your trusted brand for cosmetic products and personal care.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>KHADIS ENTERPRISE is committed to providing high-quality cosmetics and skincare products. We blend innovation and nature to give you the best care for your beauty and wellness.</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Photo Gallery</h2>
+      <div class="grid">
+        <img src="img1.jpg" alt="Product 1" class="fade-in" />
+        <img src="img2.jpg" alt="Product 2" class="fade-in" />
+        <img src="img3.jpg" alt="Product 3" class="fade-in" />
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card fade-in">
+          <img src="prod1.jpg" alt="Lip Balm" />
+          <h3>Herbal Lip Balm</h3>
+          <p>$5.99</p>
+        </div>
+        <div class="product-card fade-in">
+          <img src="prod2.jpg" alt="Face Cream" />
+          <h3>Glow Face Cream</h3>
+          <p>$14.99</p>
+        </div>
+        <div class="product-card fade-in">
+          <img src="prod3.jpg" alt="Body Lotion" />
+          <h3>Soft Touch Lotion</h3>
+          <p>$9.99</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="news">
+    <div class="container">
+      <h2>Latest News</h2>
+      <article class="fade-in">
+        <h3>Grand Opening of Our New Store!</h3>
+        <p>We are excited to announce the launch of our new outlet in Lagos.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial">
+        <p>"KHADIS products are amazing! My skin has never looked better."</p>
+        <strong>– Amina O.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Fast delivery and excellent customer service. Highly recommend!"</p>
+        <strong>– John E.</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+        <input type="email" name="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 KHADIS ENTERPRISE. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><img src="fb-icon.png" alt="Facebook" /></a>
+        <a href="#"><img src="ig-icon.png" alt="Instagram" /></a>
+        <a href="#"><img src="wa-icon.png" alt="WhatsApp" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="topBtn" onclick="scrollToTop()">⬆️ Top</button>
+</body>
+</html>
